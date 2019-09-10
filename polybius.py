@@ -22,7 +22,7 @@ def get_one_time_pad(numbers):
     #takes the last 2 digits for the entry and
     # creates a one time pad key used for encryption
     numbers_length = len(numbers)
-    one_time_pad = int(numbers[numbers_length -2] + numbers[numbers_length - 1])
+    one_time_pad = 10 * int(numbers[numbers_length -2]) + int(numbers[numbers_length - 1])
     return(one_time_pad)
 
 
